@@ -1,15 +1,15 @@
 ;(function(exports){
 	var document = exports.document,
-		mask = createElementWithClassName('spinner-mask'),
-		box = createElementWithClassName('spinner-box'),
-		spinner = createElementWithClassName('spinner'),
-		spinner_container_1 = createElementWithClassName('spinner-container'),
+		mask = createDivWithClassName('spinner-mask'),
+		box = createDivWithClassName('spinner-box'),
+		spinner = createDivWithClassName('spinner'),
+		spinner_container_1 = createDivWithClassName('spinner-container'),
 		spinner_container_2,
 		spinner_container_3,
-		circle_1 = createElementWithClassName('circle1'),
-		circle_2 = createElementWithClassName('circle2'),
-		circle_3 = createElementWithClassName('circle3'),
-		circle_4 = createElementWithClassName('circle4');
+		circle_1 = createDivWithClassName('circle1'),
+		circle_2 = createDivWithClassName('circle2'),
+		circle_3 = createDivWithClassName('circle3'),
+		circle_4 = createDivWithClassName('circle4');
 
 	spinner_container_1.appendChild(circle_1);
 	spinner_container_1.appendChild(circle_2);
@@ -39,9 +39,9 @@
 	Object.preventExtensions(self);
 	exports.spinner = self;
 
-	function createElementWithClassName(className){
-		var elem = document.createElement('div');
-		elem.className = className;
-		return elem;
+	function createDivWithClassName(classname){
+		var div = document.createElement('div');
+		div.className = className;
+		return div;
 	}
 })(window);
