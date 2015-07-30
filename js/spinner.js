@@ -41,7 +41,7 @@
 
 	function createDivWithClassName(classname){
 		var div = document.createElement('div');
-		div.className = className;
+		div.setAttribute('class', classname);
 		return div;
 	}
 })(window);
