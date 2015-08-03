@@ -1,4 +1,4 @@
-;(function(exports){
+(function(exports){
 	var document = exports.document,
 		mask = createDivWithClassName('spinner-mask'),
 		box = createDivWithClassName('spinner-box'),
